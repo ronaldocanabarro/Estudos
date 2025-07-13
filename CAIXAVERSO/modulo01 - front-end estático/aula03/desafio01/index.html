@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1 - POST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Cadastro</h1>
+    <form action="https://httpbin.org/post" method="POST">
+
+        <!-- Campo Nome -->
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required />
+        </div>
+
+        <!-- Campo Data de nascimento -->
+        <div>
+            <label for="datanasc">Data de nascimento:</label>
+            <input type="date" name="datanasc" id="datanasc" max="2007-07-10" required />
+        </div>
+
+        <!-- Campo Telefone -->
+        <div>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone" pattern="[0-9]{2}-[9]{1}[0-9]{4}-[0-9]{4}"
+                placeholder="XX-9XXXX-XXXX" required />
+        </div>
+
+        <!-- Campo Gênero -->
+        <div>
+            <fieldset>
+                <legend>
+                    Gênero:
+                </legend>
+                <input type="radio" name="genero" id="masculino" value="masculino" />
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="feminino" value="feminino" />
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="genero" id="outros" value="outros" />
+                <label for="outro">Outros</label>
+            </fieldset>
+        </div>
+
+        <!-- Campo Cor preferida -->
+        <div>
+            <label for="corpref">Cor preferida:</label>
+            <input type="color" name="corpref" id="corpref" />
+        </div>
+
+        <!-- Campo Hobbies -->
+        <div>
+            <fieldset>
+                <legend>Hobbies (no mínimo 7):</legend>
+                <input type="checkbox" name="hobby" id="ler" value="ler" />
+                <label for="ler">Ler</label><br />
+
+                <input type="checkbox" name="hobby" id="cozinhar" value="cozinhar" />
+                <label for="cozinhar">Cozinhar</label><br />
+
+                <input type="checkbox" name="hobby" id="viajar" value="viajar" />
+                <label for="viajar">Viajar</label><br />
+
+                <input type="checkbox" name="hobby" id="fotografia" value="fotografia" />
+                <label for="fotografia">Fotografia</label><br />
+
+                <input type="checkbox" name="hobby" id="dança" value="dança" />
+                <label for="dança">Dançar</label><br />
+
+                <input type="checkbox" name="hobby" id="jardinagem" value="jardinagem" />
+                <label for="jardinagem">Jardinagem</label><br />
+
+                <input type="checkbox" name="hobby" id="desenho" value="desenho" />
+                <label for="desenho">Desenhar</label><br />
+
+                <input type="checkbox" name="hobby" id="filmes" value="filmes" />
+                <label for="filmes">Assistir filmes</label><br />
+
+                <input type="checkbox" name="hobby" id="jogos" value="jogos" />
+                <label for="jogos">Jogos</label><br />
+
+                <input type="checkbox" name="hobby" id="musica" value="música" />
+                <label for="musica">Ouvir música</label>
+            </fieldset>
+        </div>
+
+        <!-- Botões de ação -->
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+</body>
+
+</html>

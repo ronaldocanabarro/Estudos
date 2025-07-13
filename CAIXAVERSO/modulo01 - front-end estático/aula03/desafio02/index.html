@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 2 - GET</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Search for Dish Recipes</h1>
+    <form action="https://www.themealdb.com/api/json/v1/1/filter.php
+" method="get" target="_blank">
+
+        <!-- campo Ingredient -->
+        <div>
+            <fieldset>
+                <legend>Ingredient</legend>
+
+                <input type="radio" name="i" id="chicken" value="chicken" required />
+                <label for="chicken">Chicken</label>
+
+                <input type="radio" name="i" id="beef" value="beef" />
+                <label for="beef">Beef</label>
+
+                <input type="radio" name="i" id="salmon" value="salmon" />
+                <label for="salmon">Salmon</label>
+
+                <input type="radio" name="i" id="rice" value="rice" />
+                <label for="rice">Rice</label>
+
+                <input type="radio" name="i" id="cheese" value="cheese" />
+                <label for="cheese">Cheese</label>
+            </fieldset>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>

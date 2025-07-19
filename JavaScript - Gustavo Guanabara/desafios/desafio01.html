@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio das Mensagens</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            width: 90px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Desafio das Mensagens</h1>
+    <button onclick="mostrarAlerta(1)">Botão 1</button>
+    <button onclick="mostrarAlerta(2)">Botão 2</button>
+    <button onclick="mostrarAlerta(3)">Botão 3</button>
+
+    <script>
+        function mostrarAlerta(numeroBotao) {
+            window.alert(`Você clicou no ${numeroBotao}º botão!`);
+        };
+    </script>
+</body>
+
+</html>

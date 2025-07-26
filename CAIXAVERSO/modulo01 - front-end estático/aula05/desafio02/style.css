@@ -1,0 +1,38 @@
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
+}
+
+tr,
+th,
+td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+th {
+    background-color: red;
+}
+
+[colspan="4"] {
+    background-color: violet;
+}
+
+[colspan="2"] {
+    background-color: orangered;
+}
+
+[rowspan="2"] {
+    background-color: greenyellow;
+}
+
+td:nth-child(2) {
+    background-color: gray;
+}
+
+tr:last-child td:last-child {
+    background-color: blue;
+}

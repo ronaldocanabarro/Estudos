@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+}
+
+.box1 {
+    height: 100px;
+    width: 100px;
+    background: lightblue;
+    border: 1px solid black;
+    position: absolute;
+}
+
+.box2 {
+    height: 100px;
+    width: 100px;
+    background: lightcoral;
+    border: 1px solid black;
+    position: absolute;
+    left: 101px;
+}
+
+.box3 {
+    height: 100px;
+    width: 100px;
+    background: lightcyan;
+    border: 1px solid black;
+    position: absolute;
+    left: 202px;;
+}
+
+.box4 {
+    height: 100px;
+    width: 100px;
+    background: lightgoldenrodyellow;
+    border: 1px solid black;
+    position: absolute;
+    left: 303px;
+}

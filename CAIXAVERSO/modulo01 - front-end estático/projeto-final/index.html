@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAIXA</title>
+    <meta name="description"
+        content="Plataforma institucional da CAIXA Econômica Federal com informações sobre abertura de conta, crédito, cartões, investimentos, seguros, previdência, benefícios sociais, taxas e canais de atendimento.">
+    <meta name="keywords"
+        content="Caixa, banco, conta corrente, conta poupança, cartão de crédito, empréstimo, financiamento, investimentos, CDB, LCI, LCA, fundos, seguros, previdência privada, benefícios sociais, taxas, atendimento, FGTS, Bolsa Família">
+    <meta name="author" content="Ronaldo Canabarro">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#home"><img src="imagens/x-volume-negativa-54.png" alt="ìcone CAIXA" class="icone-caixa"></a>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#taxas">Taxas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <img src="imagens/logo-caixa-home.jpg" alt="Logo da CAIXA" id="logo">
+            <h1>Plataforma Caixa</h1>
+            <p>Caixa, o banco de todos os brasileiros</p>
+        </section>
+
+        <div id="divisoria1"></div>
+
+        <section id="catalogo">
+            <h2>Catálogo de Produtos e Serviços</h2>
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Abertura de Conta</h3>
+                    <p>Corrente, Poupança e Digital para movimentar dinheiro, pagar contas e receber benefícios.</p>
+                </div>
+                <div class="card">
+                    <h3>Empréstimos e Financiamentos</h3>
+                    <p>Oferece crédito pessoal, consignado, crédito habitacional e crédito para veículos.</p>
+                </div>
+                <div class="card">
+                    <h3>Cartões de Débito e Crédito</h3>
+                    <p>Emissão e gestão de cartões para compras à vista ou parceladas, com ou sem anuidade.</p>
+                </div>
+                <div class="card">
+                    <h3>Investimentos (Poupança, CDB, LCI/LCA, Fundos)</h3>
+                    <p>Aplicações financeiras para diferentes perfis de clientes.</p>
+                </div>
+                <div class="card">
+                    <h3>Seguros (Vida, Residencial, Auto, Prestamista)</h3>
+                    <p>Proteção para bens e pessoas em diversas situações.</p>
+                </div>
+                <div class="card">
+                    <h3>Previdência Privada</h3>
+                    <p>Planos de aposentadoria complementar com benefícios fiscais.</p>
+                </div>
+                <div class="card">
+                    <h3>Pagamentos e Recebimentos</h3>
+                    <p>Pagamento de contas, boletos, tributos e recebimento de salários/benefícios.</p>
+                </div>
+                <div class="card">
+                    <h3>Atendimento de Benefícios Sociais</h3>
+                    <p>Bolsa Família, FGTS, Seguro-Desemprego, PIS, INSS, Auxílio Gás, entre outros.</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="divisoria2"></div>
+
+        <section id="taxas">
+            <h2>Taxas - Crédito Pessoa Física</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Mês/2025</th>
+                        <th scope="col">CDC (% a.m.)</th>
+                        <th scope="col">Cheque Especial (% a.m.)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Janeiro</td>
+                        <td>8,02%</td>
+                        <td>7,96%</td>
+                    </tr>
+                    <tr>
+                        <td>Fevereiro</td>
+                        <td>8,05%</td>
+                        <td>7,96%</td>
+                    </tr>
+                    <tr>
+                        <td>Março</td>
+                        <td>8,23%</td>
+                        <td>7,35%</td>
+                    </tr>
+                    <tr>
+                        <td>Abril</td>
+                        <td>8,23%</td>
+                        <td>7,96%</td>
+                    </tr>
+                    <tr>
+                        <td>Maio</td>
+                        <td>8,25%</td>
+                        <td>7,96%</td>
+                    </tr>
+                    <tr>
+                        <td>Junho</td>
+                        <td>8,27%</td>
+                        <td>7,96%</td>
+                    </tr>
+                    <tr>
+                        <td>Julho</td>
+                        <td>8,30%</td>
+                        <td>7,96%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div id="divisoria3"></div>
+
+        <section id="contato">
+
+            <form action="https://httpbin.org/post" method="POST" target="_blank">
+                <h2>Fale Conosco</h2>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+
+        <div>
+            <ul>
+                <li><a href="#home">&#127968; Início</a></li>
+                <li><a href="#catalogo">&#128230; Produtos</a></li>
+                <li><a href="#taxas">&#128202; Taxas</a></li>
+                <li><a href="#contato">&#128222; Fale Conosco</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/caixa/#" target="_blank">
+                        <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/instagram-new.png" alt="Instagram"
+                            class="icones"> Instagram
+                    </a>
+                </li>
+                <li><a href="https://www.facebook.com/caixa" target="_blank">
+                        <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/facebook-new.png" alt="Facebook"
+                            class="icones"> Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/canalcaixa/featured" target="_blank"><img
+                            src="https://img.icons8.com/ios-glyphs/30/FFFFFF/youtube-play.png" alt="YouTube"
+                            class="icones"> YouTube
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/@caixaoficial" target="_blank">
+                        <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/tiktok.png" alt="TikTok" class="icones">
+                        TikTok
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/caixa-economica-federal" target="_blank">
+                        <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/linkedin.png" alt="LinkedIn"
+                            class="icones"> LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <img src="imagens/x-volume-negativa-54.png" alt="Logo CAIXA" class="icone-caixa">
+            <span>© 2025 CAIXA Econômica Federal</span>
+        </div>
+    </footer>
+</body>
+
+</html>

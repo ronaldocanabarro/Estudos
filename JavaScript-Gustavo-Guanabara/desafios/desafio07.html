@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Conversor R$ -> US$</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            width: 150px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Conversor R$ &rarr; US$</h1>
+    <button onclick="conversorMonetario()">Converter</button>
+    <div id="resultado">
+        <p>Clique no botão acima parar iniciar</p>
+    </div>
+
+    <script>
+        const cotacao = parseFloat(prompt("Antes de mais nada. Quanto está a cotação do dólar agora?"));
+
+        function conversorMonetario() {
+            const reais = parseFloat(prompt("Quantos R$ você tem na carteira?"));
+            const dolares = reais / cotacao;
+
+            const resultado = document.querySelector("#resultado");
+
+            resultado.innerHTML = "";
+            resultado.innerHTML += `<p>Com R$ ${parseFloat(reais.toFixed(2)).toLocaleString("pt-BR")} é possível adquirir US$ ${parseFloat(dolares.toFixed(2)).toLocaleString("pt-BR")}, convertendo pela cotação de R$ ${parseFloat(cotacao.toFixed(2)).toLocaleString("pt-BR")} por dólar.</p>`;
+        };
+    </script>
+</body>
+
+</html>

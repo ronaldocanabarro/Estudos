@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Antes e Depois</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Antes de depois</h1>
+    <button onclick="antesDepois()">Antecessor e Sucessor</button>
+
+    <script>
+        function antesDepois() {
+            const numeroInteiro = Number(prompt("Digite um número inteiro qualquer"));
+
+            if (Number.isInteger(numeroInteiro)) {
+                const antes = numeroInteiro - 1;
+                const depois = numeroInteiro + 1;
+
+                alert(`Antes de ${numeroInteiro}, temos o número ${antes}.\nDepois de ${numeroInteiro}, temos o número ${depois}.`);
+            } else {
+                alert("O valor digitado não é um número inteiro!");
+                antesDepois();
+            };
+        };
+    </script>
+</body>
+
+</html>

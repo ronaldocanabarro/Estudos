@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Calcula Troco</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            width: 150px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Calculando o Troco</h1>
+    <button onclick="calculaTroco()">Comprar produto</button>
+
+    <script>
+        function calculaTroco() {
+            const produto = prompt("Que produto você está comprando?");
+            const preco = Number(prompt(`Quanto custa ${produto} que você está  comprando?`));
+            const dinheiro = Number(prompt(`Qual foi o valor que você deu para pagar ${produto}?`));
+            const troco = dinheiro - preco;
+
+            alert(`Você comprou ${produto} que custou R$ ${preco},00.\nDeu R$ ${dinheiro},00 em dinheiro e vai receber R$ ${troco},00 de troco.\nVolte Sempre!`);
+        }
+    </script>
+</body>
+
+</html>

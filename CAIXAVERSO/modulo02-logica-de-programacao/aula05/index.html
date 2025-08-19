@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - aula 05</title>
+</head>
+
+<body>
+    <div id="res"></div>
+    <script>
+        // Criar uma função chamada contarVogais()
+
+        function contarVogais(palavra) {
+            const vogais = ["a", "e", "i", "o", "u"];
+
+            return palavra
+                .toLowerCase()
+                .split("")
+                .filter(letra => vogais.includes(letra))
+                .length;
+        };
+
+        let res = document.querySelector("#res");
+        let palavra = prompt("Digite uma palavra: ");
+
+        res.innerHTML += `<h1>A palavra ${palavra} contém ${contarVogais(palavra)} ${contarVogais(palavra) === 1 ? "vogal" : "vogais"}.</h1>`;
+
+    </script>
+</body>
+
+</html>

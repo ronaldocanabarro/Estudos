@@ -1,12 +1,11 @@
 * {
     --cor-azul: rgb(0, 92, 169);
     --cor-azul-claro: #E0F0FF;
-    --cor-azul-escuro: #2E3078;
+    --cor-azul-escuro: #10124b;
     --cor-cinza-claro: #F8F8F8;
     --cor-cinza: rgb(216, 214, 214);
     --cor-off-white: #F9FBFB;
     --cor-laranja: rgb(255, 115, 0);
-    --cor-laranja-claro: rgb(246, 189, 84);
 
     margin: 0;
     padding: 0;
@@ -52,9 +51,14 @@ header {
 nav ul {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
     gap: 0.5rem;
 
     list-style-type: none;
+}
+
+nav img {
+    cursor: pointer;
 }
 
 a {
@@ -85,10 +89,6 @@ section {
     text-align: center;
 
     scroll-margin-top: 55px;
-}
-
-#home {
-    background-color: var(--cor-azul-claro);
 }
 
 #logo {
@@ -137,7 +137,6 @@ h3 {
     border: 1px solid var(--cor-cinza);
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    background-color: var(--cor-off-white);
 }
 
 .card:hover {
@@ -146,10 +145,6 @@ h3 {
 
     transition: 0.5s;
     cursor: pointer;
-}
-
-#taxas {
-    background-color: var(--cor-azul-claro);
 }
 
 table {
@@ -188,7 +183,7 @@ tr:nth-child(even) {
 }
 
 tr:hover {
-    background-color: var(--cor-laranja-claro);
+    background-color: var(--cor-laranja);
 
     transition: 0.5s;
     cursor: pointer;
@@ -329,4 +324,23 @@ footer .icones {
     #divisoria3 {
         height: 350px;
     }
+}
+
+/* ACESSIBILIDADE */
+
+.modo-escuro {
+    background-color: var(--cor-azul-escuro);
+    color: var(--cor-off-white);
+}
+
+#botao-modo-escuro {
+    position: fixed;
+    right: 5px;
+    top: 60px;
+
+    cursor: pointer;
+}
+
+.modo-escuro #botao-modo-escuro {
+    filter: invert(100%);
 }

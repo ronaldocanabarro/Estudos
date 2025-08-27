@@ -6,6 +6,7 @@
     --cor-cinza: rgb(216, 214, 214);
     --cor-off-white: #F9FBFB;
     --cor-laranja: rgb(255, 115, 0);
+    --cor-grafite: #41424C;
 
     margin: 0;
     padding: 0;
@@ -174,10 +175,6 @@ td:first-child {
     font-weight: bold;
 }
 
-tr:nth-child(odd) {
-    background-color: var(--cor-off-white);
-}
-
 tr:nth-child(even) {
     background-color: var(--cor-cinza);
 }
@@ -263,7 +260,7 @@ footer .icones {
     height: 16px;
 }
 
-/* DIVISORIAS */
+/*/---/ DIVISORIAS /---/*/
 
 #divisoria3,
 #divisoria1,
@@ -285,7 +282,7 @@ footer .icones {
     background-image: url(imagens/divisoria2.jpg);
 }
 
-/* RESPONSIVIDADE */
+/*/---/ RESPONSIVIDADE /---/*/
 
 @media screen and (min-width: 767px) {
 
@@ -326,12 +323,7 @@ footer .icones {
     }
 }
 
-/* ACESSIBILIDADE */
-
-.modo-escuro {
-    background-color: var(--cor-azul-escuro);
-    color: var(--cor-off-white);
-}
+/*/---/ ACESSIBILIDADE /---/*/
 
 #botao-modo-escuro {
     position: fixed;
@@ -341,6 +333,23 @@ footer .icones {
     cursor: pointer;
 }
 
+.modo-escuro {
+    background-color: var(--cor-azul-escuro);
+    color: var(--cor-off-white);
+}
+
+.modo-escuro tr:nth-child(even),
+.modo-escuro form {
+    background-color: var(--cor-grafite);
+}
+
 .modo-escuro #botao-modo-escuro {
     filter: invert(100%);
+}
+
+.modo-escuro tr:hover {
+    background-color: var(--cor-laranja);
+
+    transition: 0.5s;
+    cursor: pointer;
 }

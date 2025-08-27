@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - aula 06</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            text-decoration: underline;
+        }
+
+        p {
+            font-weight: bold;
+        }
+
+        hr {
+            width: 50%;
+        }
+
+        .encontrado {
+            color: lime;
+        }
+
+        .naoencontrado {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="res">
+        <hr>
+        <h1>Adivinhe o número no Array</h1>
+        <h2>Escolha um número entre 0 e 100:</h2>
+        <input type="number" id="escolhido" name="escolhido" min="0" max="100" required />
+        <button type="submit" onclick="confereNumeros()">Conferir!</button>
+        <hr>
+    </div>
+    <script>
+        // Percorrer o array e achar o numero digitado.
+        // Se achar, indicar o índice.
+        // Se não achar avisar que este elemento não foi encontrado no array.
+
+        const numerosAleatorios = [];
+
+        for (let i = 0; i < 50; i++) {
+            let aleatorio = Math.floor(Math.random() * 101);
+            numerosAleatorios.push(aleatorio);
+        };
+
+        const res = document.querySelector("#res");
+
+        function confereNumeros() {
+            const escolhido = parseInt(document.querySelector("#escolhido").value);
+            let contador = 0;
+
+            if (escolhido < 0 || escolhido > 100 || isNaN(escolhido)) {
+                alert("O número escolhido deve estar entre 0 e 100!\nDigite um número válido.");
+            } else {
+                for (let i = 0; i < numerosAleatorios.length; i++) {
+                    if (escolhido === numerosAleatorios[i]) {
+                        res.innerHTML += `<p>O número ${escolhido} foi encontrado na posição ${i} do array!</p>`;
+                        contador++;
+                    };
+                };
+
+                if (contador > 0) {
+                    res.innerHTML += `<p class="encontrado">O número ${escolhido} foi encontrado ${contador} ${contador === 1 ? "vez" : "vezes"}!</p>`;
+                } else {
+                    res.innerHTML += `<p class="naoencontrado">O número ${escolhido} não foi encontrado no array.</p>`;
+                };
+
+                res.innerHTML += "<hr>";
+            };
+        };
+    </script>
+</body>
+
+</html>
